@@ -1,13 +1,32 @@
-import './App.scss'
+import './App.scss';
 
-function App() {
+const title = 'Our JSX Basics Lesson';
+const userIsOnline = false;
 
-  return (
-    <div className="App">
-    <h1>JSX Basics</h1>
-    <p>test</p>
-    </div>
-  )
+const a = 9;
+const b = 2;
+
+if (a === 1 && b === 2) {
+	console.log('ok');
 }
 
-export default App
+function App() {
+	return (
+		<div className="App">
+			<h1>{title}</h1>
+
+      {/* strange if statement (hack) */}
+			{userIsOnline && <div>user is online</div>}
+			<hr />
+   
+      {/* strange if-else statement (hack) */}
+			{userIsOnline ? (
+				<div>user doesn't need to login</div>
+			) : (
+				<div>user needs to login</div>
+			)}
+		</div>
+	);
+}
+
+export default App;

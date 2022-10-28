@@ -1,0 +1,15 @@
+- x display variables
+- .. conditional rendering: if-statement
+
+
+
+
+
+
+    conditional rendering: if-else-statement
+    understand conditional rendering and data security
+    dynamic inline styles
+    dynamic classes
+    display an array of objects
+    fragment
+    state variables and JSX
